@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rajnandini| Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    /* Hide scrollbar */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      -ms-overflow-style: none;  
+      scrollbar-width: none;     
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #fffaf0, #fdeff3);
+      color: #5e4034;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Include Navbar -->
+  <iframe src="navbar.html" style="width: 100%; height: 100px; border: none; display: block;"></iframe>
+  
+  <!-- Hero Section -->
+<section style="position: relative; padding: 60px 40px; text-align: center; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; overflow: hidden; z-index: 1;">
+
+  <!-- Background Video -->
+<div style="
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: url('images/NEW_BAnner_01.jpg') no-repeat center center/cover;
+  opacity: 0.5;
+  z-index: -1;">
+</div>
+
+  <!-- Foreground Content -->
+  <div style="flex: 1; min-width: 280px; max-width: 500px; z-index: 2;margin-bottom: 160px;">
+<h1 id="heroTitle" style="font-family: 'Caveat Brush', cursive; font-size: 3rem; color: #5e4034; margin: 0;
+           text-shadow: 2px 2px 5px #f8a8c9;">
+  Welcome to Rajnandini
+</h1>
+
+    <p id="heroDesc" style="margin-top: 20px; font-size: 1.1rem;">Indulge in the most delightful range of treats, made with love and the finest ingredients. Whether it's a party, a cozy snack, or a sweet craving — we have something special for every moment.</p>
+    <button id="heroBtn" onclick="exploreMenu()" style="margin-top: 25px; padding: 12px 24px; font-size: 1.1rem; background: #f48fb1; color: white; border: none; border-radius: 8px; font-family: 'Caveat Brush', cursive; cursor: pointer;">Explore Menu</button>
+  </div>
+<div style="flex: 1; min-width: 280px; max-width: 450px; z-index: 2;">
+  <img src="images/New_Banner __02.jpg" alt="Banner Image"
+    style="width: 100%; border-radius: 20px; margin-top: 149px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);" />
+  
+  <section style="position: relative; padding: 100px 40px; min-height: 70px; text-align: center; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; overflow: hidden; z-index: 1;">
+    <!-- Your section content here -->
+  </section>
+</div>
+
+</section>
+
+
+  <!-- Services Section -->
+<section style="position: relative; padding: 40px 20px; overflow: hidden; background: #fffaf0;">
+  <!-- Floating Background Icons -->
+  <div id="floatingIcons" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;">
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 10%; left: 5%; opacity: 0.7;">🎂</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 40%; right: 10%; opacity: 0.9;">🍩</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 15%; left: 25%; opacity: 0.7;">☕</span>
+
+    <!-- <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 10%; right: 20%; opacity: 0.6;">🎉</span> -->
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 5%; right: 15%; opacity: 0.5;">🧁</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 60%; left: 10%; opacity: 0.;">🍕</span>
+    <!-- <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 70%; right: 30%; opacity: 0.7;">🥐</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 5%; left: 15%; opacity: 0.6;">🍰</span> -->
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 20%; right: 5%; opacity: 0.9;">🥧</span>
+    <!-- <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 50%; left: 50%; opacity: 0.9;">🍦</span> -->
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 30%; right: 10%; opacity: 0.9;">🍪</span>
+    <!-- <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 40%; left: 35%; opacity: 0.3;">🥞</span> -->
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 35%; right: 35%; opacity: 0.9;">🍧</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 20%; left: 5%; opacity: 0.5;">🧃</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 80%; right: 5%; opacity: 0.3;">🍫</span>
+    <!-- <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 50%; left: 70%; opacity: 0.6;">🍹</span> -->
+  
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 60%; left: 60%; opacity: 0.9;">🫖</span>
+  </div>
+  <!-- Services Section -->
+<section style="position: relative; padding: 40px 20px; overflow: hidden; background: #fffaf0;">
+  <!-- Floating Background Icons -->
+  <div id="floatingIcons" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;">
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 10%; left: 5%; opacity: 0.9;">🎂</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 40%; right: 10%; opacity: 0.9;">🍩</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 15%; left: 25%; opacity: 0.9;">☕</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 25%; left: 45%; opacity: 0.9;">🍨</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 5%; right: 15%; opacity: 0.9;">🧁</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 60%; left: 10%; opacity: 0.9;">🍕</span>
+
+
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 35%; right: 35%; opacity: 0.9;">🍧</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 20%; left: 5%; opacity: 0.9;">🧃</span>
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; top: 80%; right: 5%; opacity: 0.9;">🍫</span>
+
+    <span class="float-icon" style="position: absolute; font-size: 2.5rem; bottom: 60%; left: 60%; opacity: 0.9;">🫖</span>
+  </div>
+</section>
+
+
+  <!-- Section Heading -->
+  <h2 style="text-align: center; font-size: 2.5rem; font-family: 'Caveat Brush', cursive; margin-bottom: 40px; position: relative; z-index: 1; text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5);">
+  Our Specialties
+</h2>
+
+<!-- Service Cards -->
+<div class="service-cards" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; position: relative; z-index: 1;">
+  <!-- Card Template -->
+  <div class="service-card" style="position: relative; background: white; border-radius: 16px; padding: 20px; width: 250px; border: 2px solid #d63384; box-shadow: 0 8px 20px rgba(214, 51, 132, 0.2); text-align: center; overflow: hidden;">
+    <span style="position: absolute; font-size: 4rem; top: 10px; right: 10px; opacity: 0.08; pointer-events: none;">🎂</span>
+    <h3 style="font-family: 'Caveat Brush', cursive; font-size: 1.8rem;">Customised Cakes</h3>
+    <p style="font-size: 0.95rem;">Personalized cakes for birthdays, weddings, and every occasion.</p>
+  </div>
+
+  <div class="service-card" style="position: relative; background: white; border-radius: 16px; padding: 20px; width: 250px; border: 2px solid #d63384; box-shadow: 0 8px 20px rgba(214, 51, 132, 0.2); text-align: center; overflow: hidden;">
+    <span style="position: absolute; font-size: 4rem; top: 10px; left: 10px; opacity: 0.08; pointer-events: none;">🍩</span>
+    <h3 style="font-family: 'Caveat Brush', cursive; font-size: 1.8rem;">Dessert & Snacks</h3>
+    <p style="font-size: 0.95rem;">Sweet treats and quick bites to satisfy your cravings.</p>
+  </div>
+
+  <div class="service-card" style="position: relative; background: white; border-radius: 16px; padding: 20px; width: 250px; border: 2px solid #d63384; box-shadow: 0 8px 20px rgba(214, 51, 132, 0.2); text-align: center; overflow: hidden;">
+    <span style="position: absolute; font-size: 4rem; bottom: 10px; left: 10px; opacity: 0.08; pointer-events: none;">🎉</span>
+    <h3 style="font-family: 'Caveat Brush', cursive; font-size: 1.8rem;">Party Orders</h3>
+    <p style="font-size: 0.95rem;">Bulk desserts, starters, and drinks to light up your events.</p>
+  </div>
+
+  <div class="service-card" style="position: relative; background: white; border-radius: 16px; padding: 20px; width: 250px; border: 2px solid #d63384; box-shadow: 0 8px 20px rgba(214, 51, 132, 0.2); text-align: center; overflow: hidden;">
+    <span style="position: absolute; font-size: 4rem; top: 15px; right: 15px; opacity: 0.08; pointer-events: none;">🧁</span>
+    <h3 style="font-family: 'Caveat Brush', cursive; font-size: 1.8rem;">Baking Materials</h3>
+    <p style="font-size: 0.95rem;">Everything a baker needs – from ingredients to tools.</p>
+  </div>
+
+  <div class="service-card" style="position: relative; background: white; border-radius: 16px; padding: 20px; width: 250px; border: 2px solid #d63384; box-shadow: 0 8px 20px rgba(214, 51, 132, 0.2); text-align: center; overflow: hidden;">
+    <span style="position: absolute; font-size: 4rem; top: 15px; left: 10px; opacity: 0.08; pointer-events: none;">🍨</span>
+    <h3 style="font-family: 'Caveat Brush', cursive; font-size: 1.8rem;">Rajmandir Ice Creams</h3>
+    <p style="font-size: 0.95rem;">Premium ice creams with rich flavors and creamy textures.</p>
+  </div>
+
+  <div class="service-card" style="position: relative; background: white; border-radius: 16px; padding: 20px; width: 250px; border: 2px solid #d63384; box-shadow: 0 8px 20px rgba(214, 51, 132, 0.2); text-align: center; overflow: hidden;">
+    <span style="position: absolute; font-size: 4rem; bottom: 15px; right: 15px; opacity: 0.08; pointer-events: none;">🥟</span>
+    <h3 style="font-family: 'Caveat Brush', cursive; font-size: 1.8rem;">Darjeeling Momos</h3>
+    <p style="font-size: 0.95rem;">Steamed and fried momos with authentic spicy dips.</p>
+  </div>
+
+  <div class="service-card" style="position: relative; background: white; border-radius: 16px; padding: 20px; width: 250px; border: 2px solid #d63384; box-shadow: 0 8px 20px rgba(214, 51, 132, 0.2); text-align: center; overflow: hidden;">
+    <span style="position: absolute; font-size: 4rem; bottom: 10px; left: 10px; opacity: 0.08; pointer-events: none;">☕</span>
+    <h3 style="font-family: 'Caveat Brush', cursive; font-size: 1.8rem;">Cafe Dine-In</h3>
+    <p style="font-size: 0.95rem;">Cozy cafe space with snacks, desserts, and warm vibes.</p>
+  </div>
+</div>
+
+
+  <!-- GSAP for floating animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    // Animate floating background icons
+    document.querySelectorAll(".float-icon").forEach(icon => {
+      const xMove = Math.random() * 40 - 20;
+      const yMove = Math.random() * 40 - 20;
+      const duration = 4 + Math.random() * 2;
+
+      gsap.to(icon, {
+        x: xMove,
+        y: yMove,
+        duration: duration,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+      });
+    });
+
+    // Hover effect for cards
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-5px)';
+        card.style.boxShadow = '0 8px 16px rgba(0,0,0,0.15)';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0)';
+        card.style.boxShadow = '0 4px 12px rgba(0,0,0,0.08)';
+      });
+    });
+  </script>
+</section>
+
+
+  <!-- Internal Footer -->
+
+
+<!-- Moments Captured Section -->
+<section style="padding: 40px 20px; background: #fffaf0; position: relative; overflow: hidden;">
+  <!-- Floating Background Icons -->
+  <div id="floatingIcons" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;">
+    <span style="position: absolute; font-size: 3rem; top: 10%; left: 10%; opacity: 0.7;">📷</span>
+    <span style="position: absolute; font-size: 4rem; bottom: -5%; right: 15%; opacity: 0.7;">🎉</span>
+    <span style="position: absolute; font-size: 3.5rem; top: 20%; right: 30%; opacity: 0.8;">🍰</span>
+    <span style="position: absolute; font-size: 3rem; bottom: 1%; left: 25%; opacity: 0.9;">💫</span>
+  </div>
+
+  <!-- Title -->
+ <h2 style="text-align: center; font-family: 'Caveat Brush', cursive; font-size: 2.5rem; z-index: 1; position: relative;
+           color: #5e4034; 
+           text-shadow: 
+             1px 1px 0 #fff, 
+             2px 2px 0 #f8c4e1, 
+             3px 3px 0 #f3a0cc, 
+             4px 4px 0 #ec7bb9;">
+  Moments Captured
+</h2>
+
+
+
+  <!-- Auto-Scrolling Image Container -->
+  <!-- Auto-Scrolling Image Strip with Pink Shadow -->
+<div class="scroll-wrapper" style="overflow: hidden; position: relative; z-index: 1;">
+  <div class="moments-scroll" style="display: flex; gap: 15px; padding: 20px 0; animation: scroll-left 40s linear infinite;">
+    
+    <!-- Repeating Image Set -->
+    <img src="images/moment _1.jpeg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/Moment_2.jpg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/moment_3.jpeg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/moment _1.jpeg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/Moment_2.jpg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/moment_3.jpeg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/moment_2.jpg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/moment _1.jpeg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+
+    <!-- Duplicate Set -->
+    <img src="images/moment _1.jpeg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/Moment_2.jpg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/moment_3.jpeg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/moment _1.jpeg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/Moment_2.jpg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/moment_3.jpeg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/moment_2.jpg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+    <img src="images/moment _1.jpeg" style="height: 200px; border-radius: 12px; flex: 0 0 auto; box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);">
+  </div>
+</div>
+
+<!-- Add this keyframes animation in <style> or <head> -->
+<style>
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+
+</section>
+
+<!-- GSAP for Floating Icon Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  gsap.to("#floatingIcons span", {
+    y: 15,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut",
+    duration: 3,
+    stagger: 0.4
+  });
+</script>
+
+<!-- Smooth Auto-Scroll Keyframes -->
+<style>
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Hide scrollbar */
+  .scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-wrapper {
+    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+</style>
+
+
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Animation Script -->
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate images on scroll into view
+  gsap.from(".moments-scroll img", {
+    scrollTrigger: {
+      trigger: ".moments-scroll",
+      start: "top 80%",
+    },
+    opacity: 0.08,
+    y: 30,
+    stagger: 0.2,
+    duration: 0.8,
+    ease: "power2.out"
+  });
+
+  // Floating icons animation
+  gsap.to("#floatingIcons span", {
+    y: 20,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut",
+    duration: 4,
+    stagger: 0.5
+  });
+</script>
+
+
+
+<section style="position: relative; padding: 80px 20px; background: url('images/banner-bg.jpg') center/cover no-repeat; font-family: 'Inter', sans-serif; overflow: hidden; color: #5e4034;">
+
+  <!-- Floating Dessert Icons -->
+  <div id="floatingIcons" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;">
+    <span class="float-icon" style="top: 10%; left: 20%; font-size: 2.2rem;">🍰</span>
+    <span class="float-icon slow" style="top: 30%; left: 75%; font-size: 2rem;">🧁</span>
+    <span class="float-icon fast" style="top: 55%; left: 40%; font-size: 1.8rem;">🍦</span>
+    <span class="float-icon" style="top: 80%; left: 15%; font-size: 2rem;">🍨</span>
+    <span class="float-icon slow" style="top: 25%; left: 60%; font-size: 2.3rem;">🍩</span>
+    <span class="float-icon fast" style="top: 70%; left: 85%; font-size: 2rem;">🍪</span>
+  </div>
+
+  <!-- Story Text -->
+  <div style="position: relative; z-index: 1; max-width: 900px; margin: auto; text-align: center;">
+    <h2 style="font-family: 'Caveat Brush', cursive; font-size: 3rem; margin-bottom: 30px; color: #d63384;
+      text-shadow: 2px 2px 0 #f8bad2, 4px 4px 0 #fbaed4, 6px 6px 0 #f9a2cc;">
+      Our Story
+    </h2>
+    <p style="font-size: 1.15rem; line-height: 1.9; padding: 0 20px; 
+      text-shadow: 1px 1px 0 #fbd8e5, 2px 2px 0 #f7b9d2;">
+      Rajnandini began in a cozy kitchen where love and sugar danced together. With every whisk, stir, and sprinkle, our founder poured heart into handcrafted sweets that warm souls.
+      <br><br>
+      Today, we continue that journey — blending old-world charm with modern indulgence. From creamy cupcakes to luscious cakes and artisan desserts, every bite is a celebration of joy, tradition, and love.
+    </p>
+  </div>
+</section>
+
+<!-- Floating Icon Animation -->
+<style>
+  .float-icon {
+    position: absolute;
+    opacity: 0.9;
+    animation: floatUpDown 12s ease-in-out infinite;
+  }
+
+  .float-icon.slow {
+    animation-duration: 16s;
+  }
+
+  .float-icon.fast {
+    animation-duration: 8s;
+  }
+
+  @keyframes floatUpDown {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+</style>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Caveat+Brush&display=swap" rel="stylesheet">
+
+<!-- Animation Styles -->
+<style>
+  .float-icon {
+    position: absolute;
+    opacity: 0.9;
+    animation: floatUpDown 12s ease-in-out infinite;
+  }
+
+  .float-icon.slow {
+    animation-duration: 16s;
+  }
+
+  .float-icon.fast {
+    animation-duration: 8s;
+  }
+
+  @keyframes floatUpDown {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+</style>
+
+<!-- Optional: Add this to your <head> for fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Caveat+Brush&display=swap" rel="stylesheet">
+
+
+
+
+
+<section style="padding: 40px 20px; background: #fffaf0; position: relative; overflow: hidden;">
+  <!-- Floating background icons -->
+  <div id="floatingIcons" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+     pointer-events: none; z-index: 0;">
+  <!-- Dessert Icons Floating -->
+  <span class="float-icon" style="top: 10%; left: 20%; font-size: 2rem;">🍰</span>
+  <span class="float-icon" style="top: 30%; left: 80%; font-size: 2.2rem;">🍦</span>
+  <span class="float-icon" style="top: 50%; left: 40%; font-size: 1.8rem;">🧁</span>
+  <span class="float-icon" style="top: 70%; left: 10%; font-size: 2rem;">🍨</span>
+  <span class="float-icon" style="top: 85%; left: 60%; font-size: 2.2rem;">🍩</span>
+
+  <!-- Additional Icons -->
+  <span class="float-icon slow" style="top: 20%; left: 10%; font-size: 2rem;">🍪</span>
+  <span class="float-icon fast" style="top: 60%; left: 90%; font-size: 1.9rem;">🧇</span>
+  <span class="float-icon" style="top: 40%; left: 25%; font-size: 2rem;">🍮</span>
+  <span class="float-icon" style="top: 75%; left: 50%; font-size: 1.8rem;">🍧</span>
+  <span class="float-icon slow" style="top: 15%; left: 70%; font-size: 2.1rem;">🍡</span>
+</div>
+
+<!-- Animation Styles -->
+<style>
+  .float-icon {
+    position: absolute;
+    opacity: 0.09;
+    animation: floatUpDown 10s ease-in-out infinite;
+  }
+
+  .float-icon.slow {
+    animation: floatUpDown 14s ease-in-out infinite;
+  }
+
+  .float-icon.fast {
+    animation: floatUpDown 7s ease-in-out infinite;
+  }
+
+  @keyframes floatUpDown {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(10deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+</style>
+
+
+  <!-- Section Title -->
+  <h2 style="text-align: center; font-size: 2.5rem; font-family: 'Caveat Brush', cursive; margin-bottom: 40px;
+             color: #5e4034;
+             text-shadow: 
+               1px 1px 0 #fff,
+               2px 2px 0 #f8c4e1,
+               3px 3px 0 #f3a0cc,
+               4px 4px 0 #ec7bb9;
+             position: relative; z-index: 1;">
+    Our Signature Picks
+  </h2>
+
+  <!-- Card Wrapper -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; position: relative; z-index: 1;">
+    <!-- Card Template (Repeat for each item) -->
+    <div style="background: white; border-radius: 12px; padding: 16px; width: 220px; text-align: center;
+                box-shadow: 0 8px 18px rgba(214, 51, 132, 0.3); transition: all 0.3s ease;
+                border: 1px solid #f8d3e6;">
+      <img src="images/HERO_01.jpeg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(214, 51, 132, 0.2);" />
+      <h4 style="font-family: 'Caveat Brush'; margin: 10px 0; color: #d63384; text-shadow: 1px 1px #f8d3e6;">Chocolate Lava Cake</h4>
+      <p style="font-size: 0.9rem;">Rich, gooey and utterly delicious.</p>
+    </div>
+
+    <div style="background: white; border-radius: 12px; padding: 16px; width: 220px; text-align: center;
+                box-shadow: 0 8px 18px rgba(214, 51, 132, 0.3); transition: all 0.3s ease;
+                border: 1px solid #f8d3e6;">
+      <img src="images/S_B.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(214, 51, 132, 0.2);" />
+      <h4 style="font-family: 'Caveat Brush'; margin: 10px 0; color: #d63384; text-shadow: 1px 1px #f8d3e6;">Strawberry Bliss</h4>
+      <p style="font-size: 0.9rem;">Creamy layers with fresh strawberries.</p>
+    </div>
+
+    <div style="background: white; border-radius: 12px; padding: 16px; width: 220px; text-align: center;
+                box-shadow: 0 8px 18px rgba(214, 51, 132, 0.3); transition: all 0.3s ease;
+                border: 1px solid #f8d3e6;">
+      <img src="images/Brovni.jpeg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(214, 51, 132, 0.2);" />
+      <h4 style="font-family: 'Caveat Brush'; margin: 10px 0; color: #d63384; text-shadow: 1px 1px #f8d3e6;">Choco Fudge Brownie</h4>
+      <p style="font-size: 0.9rem;">Dense, chewy and chocolate-packed.</p>
+    </div>
+
+    <div style="background: white; border-radius: 12px; padding: 16px; width: 220px; text-align: center;
+                box-shadow: 0 8px 18px rgba(214, 51, 132, 0.3); transition: all 0.3s ease;
+                border: 1px solid #f8d3e6;">
+      <img src="images/V_D.jpeg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(214, 51, 132, 0.2);" />
+      <h4 style="font-family: 'Caveat Brush'; margin: 10px 0; color: #d63384; text-shadow: 1px 1px #f8d3e6;">Vanilla Dream</h4>
+      <p style="font-size: 0.9rem;">A soft cloud of vanilla mousse delight.</p>
+    </div>
+
+    <div style="background: white; border-radius: 12px; padding: 16px; width: 220px; text-align: center;
+                box-shadow: 0 8px 18px rgba(214, 51, 132, 0.3); transition: all 0.3s ease;
+                border: 1px solid #f8d3e6;">
+      <img src="images/RED.jpeg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(214, 51, 132, 0.2);" />
+      <h4 style="font-family: 'Caveat Brush'; margin: 10px 0; color: #d63384; text-shadow: 1px 1px #f8d3e6;">Red Velvet Cupcake</h4>
+      <p style="font-size: 0.9rem;">Soft, buttery and topped with cream cheese.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Floating icon animation -->
+<style>
+  .float-icon {
+    animation: floatIcon 12s ease-in-out infinite;
+    opacity: 0.25;
+  }
+
+  @keyframes floatIcon {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(8deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+</style>
+
+<script>
+  // Smooth hover lift and highlight
+  document.querySelectorAll('div[style*="box-shadow"]').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-6px)';
+      card.style.boxShadow = '0 12px 28px rgba(214, 51, 132, 0.4)';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0)';
+      card.style.boxShadow = '0 8px 18px rgba(214, 51, 132, 0.3)';
+    });
+  });
+</script>
+
+
+  <!-- Hover effect for all cards -->
+  <script>
+    document.querySelectorAll('section div[style*="box-shadow"]').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-6px)';
+        card.style.boxShadow = '0 12px 24px rgba(255,105,180,0.25)';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0)';
+        card.style.boxShadow = '0 6px 15px rgba(255,105,180,0.2)';
+      });
+    });
+  </script>
+</section>
+
+
+
+  <section style="position: relative; padding: 60px 20px; background: #fffaf0; overflow: hidden; font-family: 'Inter', sans-serif;">
+  <!-- Floating Background Icons -->
+  <div id="floatingIcons" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;">
+    <span class="float-icon slow" style="top: 10%; left: 15%; font-size: 2.5rem;">💬</span>
+    <span class="float-icon" style="top: 25%; left: 80%; font-size: 2rem;">⭐</span>
+    <span class="float-icon fast" style="top: 50%; left: 40%; font-size: 2.2rem;">🗣️</span>
+    <span class="float-icon slow" style="top: 70%; left: 20%; font-size: 2rem;">❤️</span>
+    <span class="float-icon" style="top: 85%; left: 75%; font-size: 2.5rem;">🎉</span>
+  </div>
+
+  <!-- Heading -->
+  <h2 style="
+      position: relative; z-index: 1;
+      text-align: center;
+      font-family: 'Caveat Brush', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #d63384;
+      text-shadow:
+        2px 2px 0 #fff,
+        4px 4px 0 #f8c4e1,
+        6px 6px 0 #f3a0cc,
+        8px 8px 0 #ec7bb9;
+    ">
+    What Our Customers Say
+  </h2>
+
+  <!-- Testimonials -->
+  <div style="position: relative; z-index: 1; max-width: 800px; margin: auto; display: flex; flex-direction: column; gap: 30px;">
+    <p style="
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #5e4034;
+        text-shadow:
+          1px 1px 0 #fff,
+          2px 2px 0 #f8c4e1,
+          3px 3px 0 #f3a0cc;
+      ">
+      “Absolutely loved the red velvet cupcake—it melted in my mouth! Exceptional quality and flavor.”<br>
+      <strong>– Anjali K.</strong>
+    </p>
+    <p style="
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #5e4034;
+        text-shadow:
+          1px 1px 0 #fff,
+          2px 2px 0 #f8c4e1,
+          3px 3px 0 #f3a0cc;
+      ">
+      “The customized birthday cake was a showstopper. So moist and beautifully decorated!”<br>
+      <strong>– Rohit S.</strong>
+    </p>
+    <p style="
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #5e4034;
+        text-shadow:
+          1px 1px 0 #fff,
+          2px 2px 0 #f8c4e1,
+          3px 3px 0 #f3a0cc;
+      ">
+      “Best macarons in town—crisp shell, creamy  center, and perfect sweetness”<br>
+      <strong>– Meera P.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- Floating Icon Animation -->
+<style>
+  .float-icon {
+    position: absolute;
+    opacity: 0.9;
+    animation: floatUpDown 12s ease-in-out infinite;
+  }
+  .float-icon.slow { animation-duration: 16s; }
+  .float-icon.fast { animation-duration: 8s; }
+  @keyframes floatUpDown {
+    0%   { transform: translateY(0) rotate(0deg); }
+    50%  { transform: translateY(-20px) rotate(8deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+</style>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Caveat+Brush&display=swap" rel="stylesheet">
+
+
+
+  <!-- Footer Slider (External) -->
+  <iframe src="footer.html" style="width: 100%; height: 300px; border: none; display: block;"></iframe>
+
+  <!-- JavaScript -->
+  <script>
+    function exploreMenu() {
+      window.scrollTo({ top: document.body.scrollHeight / 2, behavior: 'smooth' });
+    }
+
+    // GSAP Animations
+    gsap.from("#heroTitle", { duration: 1, y: -50, opacity: 0, ease: "power2.out" });
+    gsap.from("#heroDesc", { duration: 1.2, y: 30, opacity: 0, delay: 0.3 });
+    gsap.from("#heroBtn", { duration: 1, scale: 0.8, opacity: 0, delay: 0.6 });
+    gsap.from("#heroImg", { duration: 1.2, x: 100, opacity: 0, delay: 0.4, ease: "power2.out" });
+    gsap.from("#servicesTitle", { duration: 1, opacity: 0, y: -30, delay: 0.2 });
+    gsap.from(".service-card", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power2.out",
+      delay: 0.4
+    });
+    gsap.from("#internalFooter", {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      delay: 1.2,
+      ease: "power1.out"
+    });
+  </script>
+
+  
+
+</body>
+</html>

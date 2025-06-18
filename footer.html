@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footer - Rajnandini</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fce4ec;
+      color: #5e4034;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer-container {
+      padding: 50px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-column h3 {
+      font-family: 'Caveat Brush', cursive;
+      font-size: 2rem;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    .footer-column a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .footer-column .social-icons a {
+      font-size: 20px;
+      margin-right: 12px;
+      color: #5e4034;
+      transition: color 0.3s ease;
+    }
+
+    .footer-column .social-icons a:hover {
+      color: #d81b60;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #9c6e5d;
+    }
+
+    .footer-extra {
+      text-align: center;
+      padding: 0px 20px;
+      background-color: #f8d7e1;
+      font-size: 0.85rem;
+      color: #5e4034;
+      z-index: 1;
+      position: relative;
+    }
+
+    #floatingIcons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .float-icon {
+      position: absolute;
+      font-size: 2.5rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <footer>
+    <!-- Floating Background Icons -->
+    <div id="floatingIcons">
+      <span class="float-icon" style="top: 10%; left: 5%;">🎂</span>
+      <span class="float-icon" style="bottom: 15%; left: 25%;">☕</span>
+      <span class="float-icon" style="top: 5%; right: 15%;">🧁</span>
+      <span class="float-icon" style="top: 20%; right: 5%;">🥧</span>
+      <span class="float-icon" style="bottom: 20%; left: 5%;">🧃</span>
+      <span class="float-icon" style="top: 80%; right: 5%;">🍫</span>
+      <span class="float-icon" style="top: 5%; right: 50%;">🍒</span>
+    </div>
+
+    <div class="footer-container">
+      <!-- Branding -->
+      <div class="footer-column">
+        <h3 id="footer-logo">Rajnandini</h3>
+        <p>Your go-to place for delightful cakes, snacks, and cozy café vibes.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#menu">Home</a></li>
+          <li><a href="#about">Favorite</a></li>
+          <li><a href="#contact">About us</a></li>
+          <li><a href="#faq">Testimonial </a></li>
+          <li><a href="#faq">Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h4>Get in Touch</h4>
+        <p>Email: <a href="mailto:info@creamybliss.com">info@creamybliss.com</a></p>
+        <p>Phone: <a href="tel:+918888888888">+91 88888 88888</a></p>
+        <p>Location: 123, Bliss Lane, Cake City</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra footer line -->
+    <div class="footer-extra">
+      &copy; 2025 Rajnandini. All rights reserved. | Contact: <a href="mailto:info@creamybliss.com">info@creamybliss.com</a>
+    </div>
+  </footer>
+
+  <script>
+    // Animate the logo on hover
+    const logo = document.getElementById('footer-logo');
+
+    logo.addEventListener('mouseenter', () => {
+      gsap.to(logo, { scale: 1.2, duration: 0.3, ease: "power2.out" });
+    });
+
+    logo.addEventListener('mouseleave', () => {
+      gsap.to(logo, { scale: 1, duration: 0.3, ease: "power2.inOut" });
+    });
+
+    // Animate logo on load
+    gsap.from("#footer-logo", {
+      scale: 0,
+      duration: 1,
+      ease: "bounce.out"
+    });
+
+    // Animate all floating icons to gently move up and down
+    const floatIcons = document.querySelectorAll('.float-icon');
+    floatIcons.forEach((icon, index) => {
+      gsap.to(icon, {
+        y: 15,
+        duration: 2 + Math.random(),
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: -1,
+        delay: index * 0.3
+      });
+    });
+  </script>
+</body>
+</html>
+

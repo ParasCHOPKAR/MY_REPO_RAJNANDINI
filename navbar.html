@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creamy Bliss - Navbar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <style>
+    :root {
+      --pink-light: #ffe6f0;
+      --pink-dark: #f8bbd0;
+      --cream: #fffaf0;
+      --brown: #5e4034;
+      --accent: #f48fb1;
+      --font-main: 'Inter', sans-serif;
+      --font-fancy: 'Caveat Brush', cursive;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--pink-light);
+    }
+
+    header {
+      background: linear-gradient(to right, #f8bbd0, #ffe4ec);
+
+
+
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-family: var(--font-fancy);
+      font-size: 2.8rem;
+      color: var(--brown);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo::before {
+      content: "🍰";
+      font-size: 1.8rem;
+    }
+
+    .navbar-icons {
+      display: flex;
+      gap: 10px;
+      font-size: 1.5rem;
+      animation: floatIcon 4s ease-in-out infinite;
+    }
+
+    .navbar-icons span {
+      animation: floatIcon 4s ease-in-out infinite;
+    }
+
+    .navbar-icons span:nth-child(2) { animation-delay: 1s; }
+    .navbar-icons span:nth-child(3) { animation-delay: 2s; }
+
+    @keyframes floatIcon {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-6px); }
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--brown);
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-family: var(--font-fancy);
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    nav a:hover {
+      background-color: var(--accent);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    nav a.home::before       { content: "🏠"; }
+    nav a.favorites::before  { content: "🍦"; }
+    nav a.about::before      { content: "🎂"; }
+    nav a.testimonials::before { content: "💬"; }
+    nav a.contact::before    { content: "📞"; }
+
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 1.8rem;
+      color: var(--brown);
+    }
+
+    header > div {
+      flex: 1;
+    }
+
+    .left-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .center-section {
+      display: flex;
+      justify-content: center;
+    }
+
+    .right-section {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        background-color: #fff0f5;
+        position: absolute;
+        top: 70px;
+        right: 40px;
+        display: none;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        width: 200px;
+        z-index: 100;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar-icons {
+        display: none;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .left-section, .center-section, .right-section {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .center-section {
+        justify-content: center;
+      }
+
+      .right-section {
+        justify-content: flex-end;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="left-section">
+    <h1 class="logo" style="
+  font-family: 'Caveat Brush', cursive;
+  font-size: 3rem;
+  color: #5e4034;
+  margin: 0;
+  text-shadow:
+    1px 1px 0 #f8a8c9,
+    2px 2px 0 #f68bb5,
+    3px 3px 5px #e25a91;">
+  Rajnandini
+</h1>
+
+    </div>
+    <div class="center-section">
+      <div class="navbar-icons">
+        <span>🧁</span>
+        <span>🍩</span>
+        <span>🍨</span>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav id="navbar">
+        <a href="#home" class="home">Home</a>
+        <a href="#favorites" class="favorites">Favorites</a>
+        <a href="#about" class="about">About</a>
+        <a href="#testimonials" class="testimonials">Testimonials</a>
+        <a href="#contact" class="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('show');
+
+      if (navbar.classList.contains('show')) {
+        gsap.from("#navbar a", {
+          opacity: 0,
+          x: 30,
+          duration: 0.4,
+          stagger: 0.1,
+          ease: "power2.out"
+        });
+      }
+    }
+
+    gsap.from("header", {
+      y: -80,
+      duration: 0.8,
+      ease: "bounce.out"
+    });
+  </script>
+
+</body>
+</html>
