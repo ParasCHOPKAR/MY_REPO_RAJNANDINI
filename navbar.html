@@ -27,14 +27,12 @@
     body {
       font-family: var(--font-main);
       background: var(--pink-light);
+      overflow-x: hidden;
     }
 
     header {
       background: linear-gradient(to right, #f8bbd0, #ffe4ec);
-
-
-
-      padding: 20px 40px;
+      padding: 19px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -82,6 +80,7 @@
       display: flex;
       gap: 20px;
       align-items: center;
+      overflow-y: hidden; /* ✅ Hide vertical scroll bar */
     }
 
     nav a {
@@ -152,6 +151,7 @@
         box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         width: 200px;
         z-index: 100;
+        overflow-y: hidden; /* ✅ Make sure it also applies in mobile */
       }
 
       nav.show {
@@ -191,18 +191,9 @@
 
   <header>
     <div class="left-section">
-    <h1 class="logo" style="
-  font-family: 'Caveat Brush', cursive;
-  font-size: 3rem;
-  color: #5e4034;
-  margin: 0;
-  text-shadow:
-    1px 1px 0 #f8a8c9,
-    2px 2px 0 #f68bb5,
-    3px 3px 5px #e25a91;">
-  Rajnandini
-</h1>
-
+      <h1 class="logo" style="font-family: 'Caveat Brush', cursive; font-size: 3rem; color: #5e4034; margin: 0; text-shadow: 1px 1px 0 #f8a8c9, 2px 2px 0 #f68bb5, 3px 3px 5px #e25a91;">
+        Rajnandini
+      </h1>
     </div>
     <div class="center-section">
       <div class="navbar-icons">
