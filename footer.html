@@ -8,13 +8,11 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <style>
-    body::-webkit-scrollbar {
-      display: none;
-    }
-    body {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
+    /* Hide scrollbar on all browsers */
+    html, body {
       margin: 0;
+      padding: 0;
+      overflow-y: hidden; /* 👈 Prevent vertical scrolling */
       font-family: 'Inter', sans-serif;
       background: #fce4ec;
       color: #5e4034;
@@ -139,7 +137,7 @@
           <li><a href="#menu">Home</a></li>
           <li><a href="#about">Favorite</a></li>
           <li><a href="#contact">About us</a></li>
-          <li><a href="#faq">Testimonial </a></li>
+          <li><a href="#faq">Testimonial</a></li>
           <li><a href="#faq">Contact us</a></li>
         </ul>
       </div>
@@ -165,19 +163,19 @@
     </div>
 
     <!-- Extra footer line -->
-    <div class="footer-extra">
-      &copy; 2025 Rajnandini. All rights reserved. | Contact: <a href="mailto:info@creamybliss.com">info@creamybliss.com</a>
+ <div class="footer-extra" style="
+    margin-top: -15px;
+">
+      © 2025 Rajnandini. All rights reserved. | Contact: <a href="mailto:info@creamybliss.com">info@creamybliss.com</a>
     </div>
   </footer>
 
   <script>
     // Animate the logo on hover
     const logo = document.getElementById('footer-logo');
-
     logo.addEventListener('mouseenter', () => {
       gsap.to(logo, { scale: 1.2, duration: 0.3, ease: "power2.out" });
     });
-
     logo.addEventListener('mouseleave', () => {
       gsap.to(logo, { scale: 1, duration: 0.3, ease: "power2.inOut" });
     });
@@ -189,7 +187,7 @@
       ease: "bounce.out"
     });
 
-    // Animate all floating icons to gently move up and down
+    // Floating icons animation
     const floatIcons = document.querySelectorAll('.float-icon');
     floatIcons.forEach((icon, index) => {
       gsap.to(icon, {
@@ -204,4 +202,3 @@
   </script>
 </body>
 </html>
-
