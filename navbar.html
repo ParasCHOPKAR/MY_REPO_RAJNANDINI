@@ -24,10 +24,11 @@
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
       font-family: var(--font-main);
       background: var(--pink-light);
-      overflow-x: hidden;
     }
 
     header {
@@ -41,6 +42,7 @@
       z-index: 10;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       flex-wrap: wrap;
+      overflow: hidden;
     }
 
     .logo {
@@ -78,24 +80,30 @@
 
     nav {
       display: flex;
-      gap: 20px;
+      gap: 16px;
       align-items: center;
-      overflow-y: hidden; /* ✅ Hide vertical scroll bar */
+      flex: 1;
+      justify-content: center;
+      flex-wrap: wrap;
+      transform: translateX(-10px);
+      overflow: hidden;
+      max-width: 100%;
     }
 
     nav a {
       text-decoration: none;
       font-weight: 600;
       color: var(--brown);
-      padding: 8px 14px;
+      padding: 6px 12px;
       border-radius: 20px;
       font-family: var(--font-fancy);
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       display: flex;
       align-items: center;
       gap: 6px;
       transition: all 0.3s ease;
       background: rgba(255, 255, 255, 0.6);
+      white-space: nowrap;
     }
 
     nav a:hover {
@@ -124,11 +132,13 @@
     .left-section {
       display: flex;
       align-items: center;
+      flex: 0 0 auto;
     }
 
     .center-section {
       display: flex;
       justify-content: center;
+      flex: 1;
     }
 
     .right-section {
@@ -136,6 +146,7 @@
       justify-content: flex-end;
       align-items: center;
       gap: 20px;
+      flex: 0 0 auto;
     }
 
     @media (max-width: 768px) {
@@ -151,7 +162,7 @@
         box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         width: 200px;
         z-index: 100;
-        overflow-y: hidden; /* ✅ Make sure it also applies in mobile */
+        transform: none;
       }
 
       nav.show {
@@ -192,7 +203,7 @@
   <header>
     <div class="left-section">
       <h1 class="logo" style="font-family: 'Caveat Brush', cursive; font-size: 3rem; color: #5e4034; margin: 0; text-shadow: 1px 1px 0 #f8a8c9, 2px 2px 0 #f68bb5, 3px 3px 5px #e25a91;">
-        Rajnandini
+        Rajmandir
       </h1>
     </div>
     <div class="center-section">
@@ -209,7 +220,7 @@
         <a href="#favorites" class="favorites">Favorites</a>
         <a href="#about" class="about">About</a>
         <a href="#testimonials" class="testimonials">Testimonials</a>
-        <a href="#contact" class="contact">Contact</a>
+        <a href="javascript:void(0);" class="contact">Contact</a>
       </nav>
     </div>
   </header>
